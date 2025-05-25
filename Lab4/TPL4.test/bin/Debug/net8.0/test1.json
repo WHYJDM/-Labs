@@ -1,0 +1,222 @@
+[
+  {
+    "Id": 1,
+    "Name": "Drink1",
+    "SerialNumber": "SN0001",
+    "Type": "\u0411\u0435\u0437 \u0433\u0430\u0437\u0430",
+    "Manufacturer": {
+      "Name": "Manufacturer1",
+      "Address": "Address1",
+      "IsAChildCompany": false
+    }
+  },
+  {
+    "Id": 2,
+    "Name": "Drink2",
+    "SerialNumber": "SN0002",
+    "Type": "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+    "Manufacturer": {
+      "Name": "Manufacturer2",
+      "Address": "Address2",
+      "IsAChildCompany": true
+    }
+  },
+  {
+    "Id": 3,
+    "Name": "Drink3",
+    "SerialNumber": "SN0003",
+    "Type": "\u0411\u0435\u0437 \u0433\u0430\u0437\u0430",
+    "Manufacturer": {
+      "Name": "Manufacturer3",
+      "Address": "Address3",
+      "IsAChildCompany": false
+    }
+  },
+  {
+    "Id": 4,
+    "Name": "Drink4",
+    "SerialNumber": "SN0004",
+    "Type": "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+    "Manufacturer": {
+      "Name": "Manufacturer4",
+      "Address": "Address4",
+      "IsAChildCompany": true
+    }
+  },
+  {
+    "Id": 5,
+    "Name": "Drink5",
+    "SerialNumber": "SN0005",
+    "Type": "\u0411\u0435\u0437 \u0433\u0430\u0437\u0430",
+    "Manufacturer": {
+      "Name": "Manufacturer5",
+      "Address": "Address5",
+      "IsAChildCompany": false
+    }
+  },
+  {
+    "Id": 6,
+    "Name": "Drink6",
+    "SerialNumber": "SN0006",
+    "Type": "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+    "Manufacturer": {
+      "Name": "Manufacturer6",
+      "Address": "Address6",
+      "IsAChildCompany": true
+    }
+  },
+  {
+    "Id": 7,
+    "Name": "Drink7",
+    "SerialNumber": "SN0007",
+    "Type": "\u0411\u0435\u0437 \u0433\u0430\u0437\u0430",
+    "Manufacturer": {
+      "Name": "Manufacturer7",
+      "Address": "Address7",
+      "IsAChildCompany": false
+    }
+  },
+  {
+    "Id": 8,
+    "Name": "Drink8",
+    "SerialNumber": "SN0008",
+    "Type": "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+    "Manufacturer": {
+      "Name": "Manufacturer8",
+      "Address": "Address8",
+      "IsAChildCompany": true
+    }
+  },
+  {
+    "Id": 9,
+    "Name": "Drink9",
+    "SerialNumber": "SN0009",
+    "Type": "\u0411\u0435\u0437 \u0433\u0430\u0437\u0430",
+    "Manufacturer": {
+      "Name": "Manufacturer9",
+      "Address": "Address9",
+      "IsAChildCompany": false
+    }
+  },
+  {
+    "Id": 10,
+    "Name": "Drink10",
+    "SerialNumber": "SN0010",
+    "Type": "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+    "Manufacturer": {
+      "Name": "Manufacturer10",
+      "Address": "Address10",
+      "IsAChildCompany": true
+    }
+  },
+  {
+    "Id": 11,
+    "Name": "Drink11",
+    "SerialNumber": "SN0011",
+    "Type": "\u0411\u0435\u0437 \u0433\u0430\u0437\u0430",
+    "Manufacturer": {
+      "Name": "Manufacturer11",
+      "Address": "Address11",
+      "IsAChildCompany": false
+    }
+  },
+  {
+    "Id": 12,
+    "Name": "Drink12",
+    "SerialNumber": "SN0012",
+    "Type": "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+    "Manufacturer": {
+      "Name": "Manufacturer12",
+      "Address": "Address12",
+      "IsAChildCompany": true
+    }
+  },
+  {
+    "Id": 13,
+    "Name": "Drink13",
+    "SerialNumber": "SN0013",
+    "Type": "\u0411\u0435\u0437 \u0433\u0430\u0437\u0430",
+    "Manufacturer": {
+      "Name": "Manufacturer13",
+      "Address": "Address13",
+      "IsAChildCompany": false
+    }
+  },
+  {
+    "Id": 14,
+    "Name": "Drink14",
+    "SerialNumber": "SN0014",
+    "Type": "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+    "Manufacturer": {
+      "Name": "Manufacturer14",
+      "Address": "Address14",
+      "IsAChildCompany": true
+    }
+  },
+  {
+    "Id": 15,
+    "Name": "Drink15",
+    "SerialNumber": "SN0015",
+    "Type": "\u0411\u0435\u0437 \u0433\u0430\u0437\u0430",
+    "Manufacturer": {
+      "Name": "Manufacturer15",
+      "Address": "Address15",
+      "IsAChildCompany": false
+    }
+  },
+  {
+    "Id": 16,
+    "Name": "Drink16",
+    "SerialNumber": "SN0016",
+    "Type": "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+    "Manufacturer": {
+      "Name": "Manufacturer16",
+      "Address": "Address16",
+      "IsAChildCompany": true
+    }
+  },
+  {
+    "Id": 17,
+    "Name": "Drink17",
+    "SerialNumber": "SN0017",
+    "Type": "\u0411\u0435\u0437 \u0433\u0430\u0437\u0430",
+    "Manufacturer": {
+      "Name": "Manufacturer17",
+      "Address": "Address17",
+      "IsAChildCompany": false
+    }
+  },
+  {
+    "Id": 18,
+    "Name": "Drink18",
+    "SerialNumber": "SN0018",
+    "Type": "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+    "Manufacturer": {
+      "Name": "Manufacturer18",
+      "Address": "Address18",
+      "IsAChildCompany": true
+    }
+  },
+  {
+    "Id": 19,
+    "Name": "Drink19",
+    "SerialNumber": "SN0019",
+    "Type": "\u0411\u0435\u0437 \u0433\u0430\u0437\u0430",
+    "Manufacturer": {
+      "Name": "Manufacturer19",
+      "Address": "Address19",
+      "IsAChildCompany": false
+    }
+  },
+  {
+    "Id": 20,
+    "Name": "Drink20",
+    "SerialNumber": "SN0020",
+    "Type": "\u0413\u0430\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439",
+    "Manufacturer": {
+      "Name": "Manufacturer20",
+      "Address": "Address20",
+      "IsAChildCompany": true
+    }
+  }
+]

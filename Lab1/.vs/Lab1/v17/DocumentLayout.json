@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D5C02AD-2D0A-4C13-8771-FF455889E7EF}|Lab1\\Lab1.csproj|c:\\users\\gg\\source\\repos\\labs\\lab1\\lab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D5C02AD-2D0A-4C13-8771-FF455889E7EF}|Lab1\\Lab1.csproj|solutionrelative:lab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D5C02AD-2D0A-4C13-8771-FF455889E7EF}|Lab1\\Lab1.csproj|c:\\users\\gg\\source\\repos\\labs\\lab1\\lab1\\drinklibrary\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D5C02AD-2D0A-4C13-8771-FF455889E7EF}|Lab1\\Lab1.csproj|solutionrelative:lab1\\drinklibrary\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D5C02AD-2D0A-4C13-8771-FF455889E7EF}|Lab1\\Lab1.csproj|c:\\users\\gg\\source\\repos\\labs\\lab1\\lab1\\drinklibrary\\manufacturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D5C02AD-2D0A-4C13-8771-FF455889E7EF}|Lab1\\Lab1.csproj|solutionrelative:lab1\\drinklibrary\\manufacturer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D5C02AD-2D0A-4C13-8771-FF455889E7EF}|Lab1\\Lab1.csproj|c:\\users\\gg\\source\\repos\\labs\\lab1\\lab1\\lab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3D5C02AD-2D0A-4C13-8771-FF455889E7EF}|Lab1\\Lab1.csproj|solutionrelative:lab1\\lab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\obj\\Debug\\net8.0\\Lab1.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab1\\obj\\Debug\\net8.0\\Lab1.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Manufacturer.cs",
+              "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\DrinkLibrary\\Manufacturer.cs",
+              "RelativeDocumentMoniker": "Lab1\\DrinkLibrary\\Manufacturer.cs",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\DrinkLibrary\\Manufacturer.cs",
+              "RelativeToolTip": "Lab1\\DrinkLibrary\\Manufacturer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T16:31:07.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Drink.cs",
+              "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\DrinkLibrary\\Drink.cs",
+              "RelativeDocumentMoniker": "Lab1\\DrinkLibrary\\Drink.cs",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\DrinkLibrary\\Drink.cs",
+              "RelativeToolTip": "Lab1\\DrinkLibrary\\Drink.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAACWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T16:32:44.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Lab1.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\obj\\Debug\\net8.0\\Lab1.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Lab1\\obj\\Debug\\net8.0\\Lab1.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\obj\\Debug\\net8.0\\Lab1.AssemblyInfo.cs",
+              "RelativeToolTip": "Lab1\\obj\\Debug\\net8.0\\Lab1.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T16:32:04.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "Lab1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "Lab1\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T16:31:26.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lab1",
+              "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\Lab1.csproj",
+              "RelativeDocumentMoniker": "Lab1\\Lab1.csproj",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\Lab1.csproj",
+              "RelativeToolTip": "Lab1\\Lab1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-25T16:30:03.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\Program.cs",
+              "RelativeDocumentMoniker": "Lab1\\Program.cs",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab1\\Lab1\\Program.cs",
+              "RelativeToolTip": "Lab1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T16:23:55.669Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
