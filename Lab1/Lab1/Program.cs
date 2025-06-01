@@ -26,17 +26,17 @@ class Program
             string dllPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, DllFileName);
             if (!File.Exists(dllPath))
             {
-                Console.WriteLine($"Файл {DllFileName} не найден по пути: {dllPath}");
+                Console.WriteLine($"File {DllFileName} not found at path: {dllPath}");
                 return;
             }
 
             Assembly assembly = Assembly.LoadFrom(dllPath);
 
-            Console.WriteLine("Классы в библиотеке:");
+            Console.WriteLine("Classes in the assembly:");
             foreach (Type type in assembly.GetTypes())
             {
                 Console.WriteLine(type.FullName);
-                Console.WriteLine("Свойства:");
+                Console.WriteLine("Properties:");
                 foreach (PropertyInfo prop in type.GetProperties())
                 {
                     Console.WriteLine($" - {prop.Name} ({prop.PropertyType.Name})");
@@ -44,7 +44,7 @@ class Program
                 Console.WriteLine();
             }
 
-            Console.WriteLine("--- Выполнение задания 3: создание и вывод объектов ---");
+            Console.WriteLine("Task 3: Creating and printing objects");
 
             Type manufacturerType = assembly.GetType(ManufacturerClassName);
             MethodInfo createManufacturer = manufacturerType.GetMethod(CreateMethodName);
@@ -73,56 +73,81 @@ class Program
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Ошибка: {ex.Message}");
+            Console.WriteLine($"Error: {ex.Message}");
         }
     }
 
     static void RunMethodInvoker(Assembly asm)
     {
-        Console.WriteLine("\n Задание 1: Инвокатор методов через ввод");
-        try
+        Console.WriteLine("\nTask 1: Invoke methods via input");
+
+        while (true)
         {
-            Console.Write("Введите полное имя класса (например, Lab1.Drink): ");
+            Console.Write("Enter full class name (e.g., Lab1.Drink): ");
             string className = Console.ReadLine();
 
-            Console.Write("Введите имя метода: ");
+            Console.Write("Enter method name (e.g., Create): ");
             string methodName = Console.ReadLine();
 
-            Console.Write("Введите аргументы через запятую (без пробелов): ");
-            string[] args = Console.ReadLine().Split(',');
+            Console.Write("Enter arguments separated by commas (e.g., 1,Sprite,SN123456,Soft): ");
+            string input = Console.ReadLine();
+            string[] args = string.IsNullOrWhiteSpace(input) ? Array.Empty<string>() : input.Split(',');
 
             Type type = asm.GetType(className);
             if (type == null)
             {
-                Console.WriteLine("Класс не найден.");
-                return;
+                ShowRetryMessage();
+                continue;
             }
 
             MethodInfo method = type.GetMethod(methodName);
             if (method == null)
             {
-                Console.WriteLine("Метод не найден.");
-                return;
+                ShowRetryMessage();
+                continue;
             }
 
             ParameterInfo[] parameters = method.GetParameters();
             object[] parsedArgs = new object[parameters.Length];
 
-            for (int i = 0; i < parameters.Length; i++)
+            try
             {
-                parsedArgs[i] = Convert.ChangeType(args[i], parameters[i].ParameterType);
+                for (int i = 0; i < parameters.Length; i++)
+                {
+                    if (i < args.Length && !string.IsNullOrWhiteSpace(args[i]))
+                    {
+                        parsedArgs[i] = Convert.ChangeType(args[i], parameters[i].ParameterType);
+                    }
+                }
+            }
+            catch
+            {
+                ShowRetryMessage();
+                continue;
             }
 
-            object instance = method.IsStatic ? null : Activator.CreateInstance(type);
-            object result = method.Invoke(instance, parsedArgs);
+            try
+            {
+                object instance = method.IsStatic ? null : Activator.CreateInstance(type);
+                object result = method.Invoke(instance, parsedArgs);
 
-            Console.WriteLine("t" + "Метод выполнен успешно.");
-            if (result != null)
-                Console.WriteLine("r" + "Результат: " + result);
+                Console.WriteLine("Method executed successfully.");
+                if (result != null)
+                    Console.WriteLine("Result: " + result);
+
+                break;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception: {ex.Message}");
+                ShowRetryMessage();
+            }
         }
-        catch (Exception ex)
-        {
-            Console.WriteLine("f" + "Ошибка при вызове метода: " + ex.Message);
-        }
+    }
+
+
+    static void ShowRetryMessage()
+    {
+        Console.WriteLine("You entered an incorrect class name, method name, or arguments. Please try again.\n");
     }
 }
