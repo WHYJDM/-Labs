@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{1A4322E5-2466-45F3-8B8A-00933D0B5340}|Lab2\\Lab2.csproj|solutionrelative:lab2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gg\\source\\repos\\Labs\\Lab2\\Lab2\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab2\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gg\\source\\repos\\Labs\\Lab2\\Lab2\\obj\\Debug\\net8.0\\Lab2.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Lab2\\obj\\Debug\\net8.0\\Lab2.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A4322E5-2466-45F3-8B8A-00933D0B5340}|Lab2\\Lab2.csproj|c:\\users\\gg\\source\\repos\\labs\\lab2\\lab2\\drinklibrary\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A4322E5-2466-45F3-8B8A-00933D0B5340}|Lab2\\Lab2.csproj|solutionrelative:lab2\\drinklibrary\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,11 +26,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab2\\Lab2\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "Lab2\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab2\\Lab2\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "Lab2\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:31:38.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Lab2.AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab2\\Lab2\\obj\\Debug\\net8.0\\Lab2.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Lab2\\obj\\Debug\\net8.0\\Lab2.AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab2\\Lab2\\obj\\Debug\\net8.0\\Lab2.AssemblyInfo.cs",
+              "RelativeToolTip": "Lab2\\obj\\Debug\\net8.0\\Lab2.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:29:15.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Drink.cs",
               "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab2\\Lab2\\DrinkLibrary\\Drink.cs",
               "RelativeDocumentMoniker": "Lab2\\DrinkLibrary\\Drink.cs",
@@ -30,8 +62,7 @@
               "RelativeToolTip": "Lab2\\DrinkLibrary\\Drink.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T16:52:31.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T16:52:31.779Z"
             },
             {
               "$type": "Document",
@@ -41,7 +72,7 @@
               "RelativeDocumentMoniker": "Lab2\\Program.cs",
               "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab2\\Lab2\\Program.cs",
               "RelativeToolTip": "Lab2\\Program.cs",
-              "ViewState": "AgIAAMcAAAAAAAAAAAAwwO0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T16:24:17.018Z",
               "EditorCaption": ""

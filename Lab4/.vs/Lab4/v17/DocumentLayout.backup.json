@@ -42,8 +42,7 @@
               "RelativeToolTip": "Lab4Tests\\FileHandler.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAIwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T17:47:51.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T17:47:51.59Z"
             },
             {
               "$type": "Document",
@@ -63,9 +62,9 @@
               "Title": "FileHandler.cs",
               "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4\\Services\\FileHandler.cs",
               "RelativeDocumentMoniker": "Lab4\\Services\\FileHandler.cs",
-              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4\\Services\\FileHandler.cs",
-              "RelativeToolTip": "Lab4\\Services\\FileHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4\\Services\\FileHandler.cs*",
+              "RelativeToolTip": "Lab4\\Services\\FileHandler.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T17:41:33.999Z",
               "EditorCaption": ""

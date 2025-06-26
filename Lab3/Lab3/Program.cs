@@ -32,13 +32,13 @@ namespace LAB3
             t1.Join();
             t2.Join();
 
-            Console.WriteLine("Задание 1 завершено. Файлы сериализованы.");
+            Console.WriteLine("Task 1 completed. Files serialized.");
 
             Thread mergeThread = new Thread(() => MergeFiles(file1, file2, mergedFile));
             mergeThread.Start();
             mergeThread.Join();
 
-            Console.WriteLine("Задание 2 завершено. Файлы объединены в один.");
+            Console.WriteLine("Task 2 completed. Files merged into one.");
 
             RunReadingTasks();
         }
@@ -93,15 +93,16 @@ namespace LAB3
 
         static void RunReadingTasks()
         {
-            Console.WriteLine("\nЗадание 3.1 — Чтение в одном потоке:");
+            Console.WriteLine("\nTask 3.1 — Reading in a single thread:");
             var sw = Stopwatch.StartNew();
             var allLines = File.ReadAllLines(mergedFile);
             foreach (var line in allLines)
                 Console.WriteLine(line);
             Console.Out.Flush();
             sw.Stop();
-            Console.WriteLine($"Время: {sw.Elapsed.TotalMilliseconds:F3} мс\n");
-            Console.WriteLine("Задание 3.2 — Чтение в двух потоках:");
+            Console.WriteLine($"Time: {sw.Elapsed.TotalMilliseconds:F3} ms\n");
+
+            Console.WriteLine("Task 3.2 — Reading in two threads:");
             var lines = File.ReadAllLines(mergedFile);
             var half = lines.Length / 2;
             sw.Restart();
@@ -124,9 +125,9 @@ namespace LAB3
             t2.Join();
 
             sw.Stop();
-            Console.WriteLine($"Время: {sw.ElapsedMilliseconds} мс\n");
+            Console.WriteLine($"Time: {sw.ElapsedMilliseconds} ms\n");
 
-            Console.WriteLine("Задание 3.3 — 10 потоков с семафором:");
+            Console.WriteLine("Task 3.3 — 10 threads with semaphore:");
             SemaphoreSlim semaphore = new SemaphoreSlim(5);
             sw.Restart();
             List<Thread> threads = new List<Thread>();
@@ -137,7 +138,7 @@ namespace LAB3
                 var thread = new Thread(() =>
                 {
                     semaphore.Wait();
-                    Console.WriteLine($"Поток {id} начал чтение...");
+                    Console.WriteLine($"Thread {id} started reading...");
                     foreach (var line in lines)
                         Console.WriteLine($"[{id}] {line}");
                     Console.Out.Flush();
@@ -151,7 +152,7 @@ namespace LAB3
                 thread.Join();
 
             sw.Stop();
-            Console.WriteLine($"Время: {sw.ElapsedMilliseconds} мс\n");
+            Console.WriteLine($"Time: {sw.ElapsedMilliseconds} ms\n");
         }
 
         static void ReadLines(string[] lines)

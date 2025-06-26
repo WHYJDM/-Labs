@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TPL4.test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b020b17f752c2ca8b484d15ccce9a31b992134fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb1d479e87544a49b592c1995d3ed4929e02d795")]
 [assembly: System.Reflection.AssemblyProductAttribute("TPL4.test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TPL4.test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

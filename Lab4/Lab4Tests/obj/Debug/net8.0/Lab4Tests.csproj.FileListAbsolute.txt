@@ -174,3 +174,4 @@ C:\Users\gg\source\repos\Labs\Lab4\Lab4Tests\obj\Debug\net8.0\refint\Lab4Tests.d
 C:\Users\gg\source\repos\Labs\Lab4\Lab4Tests\obj\Debug\net8.0\Lab4Tests.pdb
 C:\Users\gg\source\repos\Labs\Lab4\Lab4Tests\obj\Debug\net8.0\Lab4Tests.genruntimeconfig.cache
 C:\Users\gg\source\repos\Labs\Lab4\Lab4Tests\obj\Debug\net8.0\ref\Lab4Tests.dll
+C:\Users\gg\source\repos\Labs\Lab4\Lab4Tests\obj\Debug\net8.0\Lab4Tests.sourcelink.json

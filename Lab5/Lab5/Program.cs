@@ -1,69 +1,69 @@
-﻿// Подключаем модели и сервисы из проекта LAB5
+﻿// Import models and services from the LAB5 project
 using Lab5.Models;
 using Lab5.Services;
 using System.Collections.Concurrent;
 
-// Создаем экземпляр класса FileHandler — он содержит всю логику обработки файлов
+// Create an instance of FileHandler — it contains all the file processing logic
 var handler = new FileHandler();
 
-// Создаем прогрессбар — после каждой записи будет выводиться символ \
+// Create a progress bar — a slash symbol will be displayed after each record is processed
 var progress = new Progress<int>(i => Console.Write("/"));
 
-// Запускаем бесконечный цикл для консольного меню
+// Start an infinite loop for the console menu
 while (true)
 {
-    // Выводим консольное меню
-    Console.WriteLine("\n1 - Сгенерировать и сохранить напитки");
-    Console.WriteLine("2 - Прочитать файлы параллельно");
-    Console.WriteLine("3 - Выйти");
+    // Display the console menu
+    Console.WriteLine("\n1 - Generate and save drinks");
+    Console.WriteLine("2 - Read files in parallel");
+    Console.WriteLine("3 - Exit");
 
-    // Считываем выбор пользователя
+    // Read user input
     var choice = Console.ReadLine();
 
-    // Если пользователь выбрал пункт 1
+    // If the user selected option 1
     if (choice == "1")
     {
-        // Генерируем 50 напитков
+        // Generate 50 drinks
         var drinks = handler.GenerateDrinks(50);
 
-        // Асинхронно сохраняем напитки в 5 отдельных файлов
+        // Asynchronously save drinks to 5 separate files
         await handler.SaveToMultipleFilesAsync(drinks);
 
-        // Уведомляем пользователя об успешной записи
-        Console.WriteLine("Файлы успешно записаны.");
+        // Notify the user of successful save
+        Console.WriteLine("Files saved successfully.");
     }
-    // Если выбран пункт 2 — читаем файлы параллельно
+    // If option 2 is selected — read files in parallel
     else if (choice == "2")
     {
-        // Создаем список имен файлов file1.json ... file5.json
+        // Create a list of file names: file1.json ... file5.json
         string[] files = Enumerable.Range(1, 5).Select(i => $"file{i}.json").ToArray();
 
-        // Загружаем данные из всех файлов параллельно, отслеживая прогресс
+        // Load data from all files in parallel, tracking progress
         var result = await handler.LoadFromFilesAsync(files, progress);
 
-        // Выводим результат чтения из всех файлов
-        Console.WriteLine("\n\nРезультат чтения:");
+        // Display the reading result from all files
+        Console.WriteLine("\n\nReading result:");
         foreach (var pair in result)
         {
-            Console.WriteLine($"\nФайл: {pair.Key}");
+            Console.WriteLine($"\nFile: {pair.Key}");
             foreach (var drink in pair.Value)
             {
-                Console.WriteLine(drink); // Печатаем каждый напиток
+                Console.WriteLine(drink); // Print each drink
             }
         }
 
-        // Сортируем все записи в словаре по ID
+        // Sort all entries in the dictionary by ID
         handler.SortDictionary(result);
-        Console.WriteLine("\nСловарь отсортирован по ID.");
+        Console.WriteLine("\nDictionary sorted by ID.");
     }
-    // Если выбран пункт 3 — выходим из программы
+    // If option 3 is selected — exit the program
     else if (choice == "3")
     {
         break;
     }
-    // Обработка неверного ввода
+    // Handle invalid input
     else
     {
-        Console.WriteLine("Неверный выбор.");
+        Console.WriteLine("Invalid selection.");
     }
 }

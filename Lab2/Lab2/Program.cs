@@ -20,26 +20,26 @@ namespace LAB2
 
                 while (true)
                 {
-                    Console.WriteLine("\nМеню:");
-                    Console.WriteLine("1. Создать 10 напитков");
-                    Console.WriteLine("2. Сериализовать в XML");
-                    Console.WriteLine("3. Показать содержимое XML-файла");
-                    Console.WriteLine("4. Десериализовать из XML и вывести");
-                    Console.WriteLine("5. Найти все Model (по SerialNumber, XDocument)");
-                    Console.WriteLine("6. Найти все Model (по SerialNumber, XmlDocument)");
-                    Console.WriteLine("7. Изменить значение SerialNumber (XDocument)");
-                    Console.WriteLine("8. Изменить значение SerialNumber (XmlDocument)");
-                    Console.WriteLine("0. Выход");
-                    Console.Write("Выбор: ");
+                    Console.WriteLine("\nMenu:");
+                    Console.WriteLine("1. Create 10 drinks");
+                    Console.WriteLine("2. Serialize to XML");
+                    Console.WriteLine("3. Show XML file content");
+                    Console.WriteLine("4. Deserialize from XML and display");
+                    Console.WriteLine("5. Find all Models (by SerialNumber, using XDocument)");
+                    Console.WriteLine("6. Find all Models (by SerialNumber, using XmlDocument)");
+                    Console.WriteLine("7. Update SerialNumber value (XDocument)");
+                    Console.WriteLine("8. Update SerialNumber value (XmlDocument)");
+                    Console.WriteLine("0. Exit");
+                    Console.Write("Choice: ");
 
-                    string choice = Console.ReadLine();
+                    string choice = Console.ReadLine() ?? "";
                     Console.Clear();
 
                     switch (choice)
                     {
                         case "1":
                             drinks = CreateDrinks();
-                            Console.WriteLine("Создано 10 объектов.");
+                            Console.WriteLine("10 objects created.");
                             break;
                         case "2":
                             SerializeToXml(drinks);
@@ -65,14 +65,14 @@ namespace LAB2
                         case "0":
                             return;
                         default:
-                            Console.WriteLine("Неверный ввод.");
+                            Console.WriteLine("Invalid input.");
                             break;
                     }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Ошибка: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message);
             }
         }
 
@@ -83,12 +83,12 @@ namespace LAB2
             {
                 var manufacturer = new Manufacturer
                 {
-                    Name = $"Завод #{i}",
-                    Address = $"Город #{i}"
+                    Name = $"Factory #{i}",
+                    Address = $"City #{i}"
                 };
                 var drink = new Drink
                 {
-                    Name = $"Напиток {i}",
+                    Name = $"Drink {i}",
                     SerialNumber = $"SN{i:0000}",
                     DrinkType = "Soft",
                     Manufacturer = manufacturer
@@ -105,11 +105,11 @@ namespace LAB2
                 var serializer = new XmlSerializer(typeof(List<Drink>));
                 using var fs = new FileStream(FileName, FileMode.Create);
                 serializer.Serialize(fs, drinks);
-                Console.WriteLine($"Сериализация завершена. Файл: {FileName}");
+                Console.WriteLine($"Serialization completed. File: {FileName}");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ошибка сериализации: {ex.Message}");
+                Console.WriteLine($"Serialization error: {ex.Message}");
             }
         }
 
@@ -127,7 +127,7 @@ namespace LAB2
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ошибка при чтении XML: {ex.Message}");
+                Console.WriteLine($"Error reading XML: {ex.Message}");
             }
         }
 
@@ -160,14 +160,14 @@ namespace LAB2
             var doc = XDocument.Load(FileName);
             var drinks = doc.Descendants("Drink").ToList();
 
-            Console.Write("Введите номер элемента (0-9): ");
+            Console.Write("Enter element number (0-9): ");
             if (!int.TryParse(Console.ReadLine(), out int index) || index < 0 || index >= drinks.Count)
             {
-                Console.WriteLine("Неверный индекс.");
+                Console.WriteLine("Invalid index.");
                 return;
             }
 
-            Console.Write("Введите новое значение SerialNumber: ");
+            Console.Write("Enter new SerialNumber value: ");
             string newValue = Console.ReadLine();
 
             var serialElem = drinks[index].Element("SerialNumber");
@@ -175,11 +175,11 @@ namespace LAB2
             {
                 serialElem.Value = newValue;
                 doc.Save(FileName);
-                Console.WriteLine("SerialNumber обновлён.");
+                Console.WriteLine("SerialNumber updated.");
             }
             else
             {
-                Console.WriteLine("SerialNumber не найден.");
+                Console.WriteLine("SerialNumber not found.");
             }
         }
 
@@ -189,14 +189,14 @@ namespace LAB2
             doc.Load(FileName);
             var nodes = doc.GetElementsByTagName("Drink");
 
-            Console.Write("Введите номер элемента (0-9): ");
+            Console.Write("Enter element number (0-9): ");
             if (!int.TryParse(Console.ReadLine(), out int index) || index < 0 || index >= nodes.Count)
             {
-                Console.WriteLine("Неверный индекс.");
+                Console.WriteLine("Invalid index.");
                 return;
             }
 
-            Console.Write("Введите новое значение SerialNumber: ");
+            Console.Write("Enter new SerialNumber value: ");
             string newValue = Console.ReadLine();
 
             var node = nodes[index];
@@ -205,11 +205,11 @@ namespace LAB2
             {
                 serialNode.InnerText = newValue;
                 doc.Save(FileName);
-                Console.WriteLine("SerialNumber обновлён.");
+                Console.WriteLine("SerialNumber updated.");
             }
             else
             {
-                Console.WriteLine("SerialNumber не найден.");
+                Console.WriteLine("SerialNumber not found.");
             }
         }
     }
@@ -224,7 +224,7 @@ namespace LAB2
 
         public void Print()
         {
-            Console.WriteLine($"Название: {Name}, SN: {SerialNumber}, Тип: {DrinkType}, Производитель: {Manufacturer?.Name}, Адрес: {Manufacturer?.Address}");
+            Console.WriteLine($"Name: {Name}, SN: {SerialNumber}, Type: {DrinkType}, Manufacturer: {Manufacturer?.Name}, Address: {Manufacturer?.Address}");
         }
     }
 
