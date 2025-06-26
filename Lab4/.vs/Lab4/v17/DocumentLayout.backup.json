@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1A476673-6EA1-4371-B213-7E73C342C419}|Lab4\\Lab4.csproj|c:\\users\\gg\\source\\repos\\labs\\lab4\\lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A476673-6EA1-4371-B213-7E73C342C419}|Lab4\\Lab4.csproj|solutionrelative:lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1A476673-6EA1-4371-B213-7E73C342C419}|Lab4\\Lab4.csproj|c:\\users\\gg\\source\\repos\\labs\\lab4\\lab4\\services\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A476673-6EA1-4371-B213-7E73C342C419}|Lab4\\Lab4.csproj|solutionrelative:lab4\\services\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4\\Program.cs",
+              "RelativeDocumentMoniker": "Lab4\\Program.cs",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4\\Program.cs*",
+              "RelativeToolTip": "Lab4\\Program.cs*",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwDYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T10:50:52.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FileHandler.cs",
               "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4Tests\\FileHandler.cs",
               "RelativeDocumentMoniker": "Lab4Tests\\FileHandler.cs",
@@ -46,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MSTestSettings.cs",
               "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4Tests\\MSTestSettings.cs",
               "RelativeDocumentMoniker": "Lab4Tests\\MSTestSettings.cs",
@@ -58,20 +75,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FileHandler.cs",
               "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4\\Services\\FileHandler.cs",
               "RelativeDocumentMoniker": "Lab4\\Services\\FileHandler.cs",
-              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4\\Services\\FileHandler.cs*",
-              "RelativeToolTip": "Lab4\\Services\\FileHandler.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAbAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4\\Services\\FileHandler.cs",
+              "RelativeToolTip": "Lab4\\Services\\FileHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T17:41:33.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Manufacturer.cs",
               "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4\\Models\\Manufacturer.cs",
               "RelativeDocumentMoniker": "Lab4\\Models\\Manufacturer.cs",
@@ -83,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Drink.cs",
               "DocumentMoniker": "C:\\Users\\gg\\source\\repos\\Labs\\Lab4\\Lab4\\Models\\Drink.cs",
               "RelativeDocumentMoniker": "Lab4\\Models\\Drink.cs",
